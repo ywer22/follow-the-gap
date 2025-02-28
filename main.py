@@ -3,7 +3,12 @@ import argparse
 
 
 def main():
-    pass
+    print("IGVC")
+    parser = argparse.ArgumentParser(description = "processing input and output file")
+    parser.add_argument('-i','--input' )
+    parser.add_argument('-o','--output' )
+    args = parser.parse_args()
+    print(args)
 
 
 
