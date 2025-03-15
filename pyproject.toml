@@ -11,5 +11,6 @@ readme = "README.md"
 [project.optional-dependencies]
 devtool = [
     "black",
-    "ruff"
+    "ruff",
+    "pre-commit"
 ]
