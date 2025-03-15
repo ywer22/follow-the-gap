@@ -1,0 +1,9 @@
+[project]
+name = "follow-the-gap"
+dynamic = ["version"]
+dependencies = [
+    "numpy"
+]
+requires-python = ">= 3.8"
+description = "Follow the gap is a geometric obstacle avoidance algorithm that will move toward goal point considering the largest gap."
+readme = "README.md"
