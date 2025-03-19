@@ -1,3 +1,10 @@
+[build-system]
+build-backend = "hatchling.build"
+requires = [
+  "hatch-vcs",
+  "hatchling",
+]
+
 [project]
 name = "follow-the-gap"
 dynamic = ["version"]
@@ -13,4 +20,20 @@ devtool = [
     "black",
     "ruff",
     "pre-commit"
+]
+
+[tool.hatch.version]
+source = "vcs"
+
+[tool.hatch.build.hooks.vcs]
+version-file = "src/follow_the_gap/version.py"
+
+[tool.hatch.build]
+artifacts = [
+  "src/follow_the_gap/version.py",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = [
+  "src/follow_the_gap",
 ]
