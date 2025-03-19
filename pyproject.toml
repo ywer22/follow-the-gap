@@ -37,3 +37,6 @@ artifacts = [
 packages = [
   "src/follow_the_gap",
 ]
+
+[project.scripts]
+followthegap = "follow_the_gap.__main__:main"
