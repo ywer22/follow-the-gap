@@ -1,0 +1,11 @@
+repos:
+-   repo: https://github.com/astral-sh/ruff-pre-commit
+    rev: 87c3371eb12642731d51e3694df5fdecbed22a4c
+    hooks:
+    -   id: ruff
+        types_or: [ python, pyi ]
+        args: [ --fix ]
+-   repo: https://github.com/psf/black.git
+    rev: 5342d2eeda6935a96d2bd0c74072b3c441d76bde
+    hooks:
+    -   id: black
